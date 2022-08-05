@@ -1,3 +1,43 @@
+// --------------------------------------------------------------- 合并两个有序数组
+// var merge = function (nums1, m, nums2, n) {
+//     if (n == 0) return nums1;
+
+//     if (m == 0) {
+//         for (let k = 0; k < n; k++) {
+//             nums1[k] = nums2[k];
+//         }
+//         return nums1;
+//     }
+
+//     let num = (m + n), i, j, f, c, temp;
+
+//     for (i = 0, j = 0; i < num; i++) {
+//         if (i >= m && nums1[i] === 0) {
+//             nums1[i] = nums2[j];
+//             j++;
+//         }
+//     }
+
+//     for (c = 0; c < num; c++) {
+//         for (f = 0; f < num; f++) {
+//             if (nums1[f] > nums1[f + 1]) {
+//                 temp = nums1[f + 1];
+//                 nums1[f + 1] = nums1[f];
+//                 nums1[f] = temp;
+//             }
+//         }
+//     }
+
+//     return nums1;
+// };
+
+// console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+// console.log(merge([1], 1, [], 0));
+// console.log(merge([0], 0, [1], 1));
+// console.log(merge([4, 5, 6, 0, 0, 0], 3, [1, 2, 3], 3));
+// console.log(merge([-1, 0, 0, 3, 3, 3, 0, 0, 0], 6, [1, 2, 2], 3));
+
+
 // --------------------------------------------------------------- 生成每种字符都是奇数个的字符串
 // var generateTheString = function (n) {
 //     if (n % 2 !== 0) return 'a'.repeat(n);
