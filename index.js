@@ -1,14 +1,37 @@
+// --------------------------------------------------------------- 快乐数
+// var isHappy = function (n) {
+//     let nums = n.toString().split('');
+//     let sum = 0, pow = 0, hashSet = new Set;
+
+//     while (sum != 1) {
+//         if (hashSet.has(sum)) return false;
+//         if (sum !== 0) nums = sum.toString().split('');
+//         hashSet.add(sum);
+//         sum = 0;
+//         nums = nums.map(v => {
+//             pow = Math.pow(parseInt(v), 2);
+//             sum += pow
+//             return pow;
+//         })
+//     };
+
+//     return true;
+// }
+
+// console.log(isHappy(19));
+// console.log(isHappy(2));
+
 
 // --------------------------------------------------------------- 只出现一次的数字
-var singleNumber = function (nums) {
-    let ans = nums[0];
-    if (nums.length > 1) {
-        for (let i = 1; i < nums.length; i++) {
-            ans = ans ^ nums[i];
-        }
-    }
-    return ans;
-};
+// var singleNumber = function (nums) {
+//     let ans = nums[0];
+//     if (nums.length > 1) {
+//         for (let i = 1; i < nums.length; i++) {
+//             ans = ans ^ nums[i];
+//         }
+//     }
+//     return ans;
+// };
 
 // console.log(singleNumber([2, 2, 1]));
 // console.log(singleNumber([4, 1, 2, 1, 2]));
