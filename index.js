@@ -1,3 +1,19 @@
+
+// --------------------------------------------------------------- 只出现一次的数字
+var singleNumber = function (nums) {
+    let ans = nums[0];
+    if (nums.length > 1) {
+        for (let i = 1; i < nums.length; i++) {
+            ans = ans ^ nums[i];
+        }
+    }
+    return ans;
+};
+
+// console.log(singleNumber([2, 2, 1]));
+// console.log(singleNumber([4, 1, 2, 1, 2]));
+
+
 // --------------------------------------------------------------- 合并两个有序数组
 // var merge = function (nums1, m, nums2, n) {
 //     if (n == 0) return nums1;
